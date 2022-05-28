@@ -11,9 +11,9 @@ import { Link } from 'react-router-dom'
 
 
 const words = [
-  ['Bleach', 'Bankai'], 
-  ['Naruto', 'Ninja'], 
-  ['Toradora', 'Romcom']
+  ['bleach', 'Bankai'], 
+  ['naruto', 'Ninja'], 
+  ['toradora', 'Romcom']
               ];
 let randomNumber = Math.floor(Math.random()*words.length);
 let selectedWord = words[randomNumber][0];
@@ -49,7 +49,7 @@ const Game = () => {
   return (
     <>
       <Header />
-      <h1 className="header">ANIME!</h1>
+      <h1 className="category">ANIME!</h1>
       <div className="game-container">
         <Figure wrongLetters={wrongLetters}/>
         <WrongLetters wrongLetters={wrongLetters} />

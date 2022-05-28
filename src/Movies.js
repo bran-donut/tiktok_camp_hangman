@@ -10,10 +10,10 @@ import { Link } from 'react-router-dom'
 
 
 const words = [
-  ['Shrek', 'Ogre smash'], 
-  ['Sonic', 'Gotta go fast'], 
-  ['Superman', 'Overpowered superhero'],
-  ['Batman', 'Rich and bored billionaire']
+  ['shrek', 'Ogre smash'], 
+  ['sonic', 'Gotta go fast'], 
+  ['superman', 'Overpowered superhero'],
+  ['batman', 'Rich and bored billionaire']
               ];
 let randomNumber = Math.floor(Math.random()*words.length);
 let selectedWord = words[randomNumber][0];
@@ -49,7 +49,7 @@ const Game = () => {
   return (
     <>
       <Header />
-      <h1 className="header">MOVIES!</h1>
+      <h1 className="category">MOVIES!</h1>
       <div className="game-container">
         <Figure wrongLetters={wrongLetters}/>
         <WrongLetters wrongLetters={wrongLetters} />

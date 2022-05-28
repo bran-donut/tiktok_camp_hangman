@@ -48,7 +48,7 @@ const Game = () => {
   return (
     <>
       <Header />
-      <h1 className="header">ANIMALS!</h1>
+      <h1 className="category">ANIMALS!</h1>
       <div className="game-container">
         <Figure wrongLetters={wrongLetters}/>
         <WrongLetters wrongLetters={wrongLetters} />

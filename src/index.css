@@ -188,12 +188,14 @@ line {
 
 .header {
   text-align:center;
-  font-size:40px;
+  font-size:80px;
+  font-family: 'Hanalei Fill', cursive;
 }
 
 .sub-header {
   text-align:center;
   font-size:20px;
+  font-family: 'Hanalei Fill', cursive;
 }
 
 .menu-button {
@@ -213,4 +215,12 @@ line {
   color:white;
   -webkit-transform:rotate(-2deg);
   transform:rotate(-2deg);
+}
+
+
+.category {
+  color:silver;
+  text-align:center;
+  font-size:40px;
+  font-family: 'Hanalei Fill', cursive;
 }
