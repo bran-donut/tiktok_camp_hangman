@@ -8,8 +8,8 @@ const Header = ({title, gameText}) => {
 }
 
 Header.defaultProps = {
-    title: "Hangman",
-    gameText: "Guess the word!",
+    title: "Murdered by words",
+    gameText: "Pen is shaper than a k_ife",
 }
 
 
