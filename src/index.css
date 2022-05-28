@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #34495e;
+  background-color: #420505;
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
@@ -40,7 +40,7 @@ h1 {
 }
 
 .figure-container {
-  fill: transparent;
+  fill: wheat;
   stroke: #fff;
   stroke-width: 4px;
   stroke-linecap: round;
@@ -188,14 +188,12 @@ line {
 
 .header {
   text-align:center;
-  font-size:80px;
-  font-family: 'Hanalei Fill', cursive;
+  font-size:40px;
 }
 
 .sub-header {
   text-align:center;
   font-size:20px;
-  font-family: 'Hanalei Fill', cursive;
 }
 
 .menu-button {
@@ -217,10 +215,28 @@ line {
   transform:rotate(-2deg);
 }
 
+.start {
+  vertical-align: middle;
+}
 
-.category {
-  color:silver;
-  text-align:center;
-  font-size:40px;
-  font-family: 'Hanalei Fill', cursive;
+#head {
+  animation: pendulum infinite 3s linear;
+}
+
+@keyframes pendulum {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(30);
+  }
+  50% {
+    transform: rotate(0);
+  }
+  75% {
+    transform: rotate(-30);
+  }
+  100% {
+    transform: rotate(0);
+  }
 }
