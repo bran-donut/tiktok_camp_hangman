@@ -1,13 +1,17 @@
 import Header from "./components/Header"
 import Figure from "./components/Figure"
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Word from "./components/Word";
 import WrongLetters from "./components/WrongLetters";
 import Keyboard from "./components/Keyboard";
 import { Hint } from "./components/Hint";
 import Popup from "./components/PopUp";
 import { Link } from 'react-router-dom'
+import Score from "./components/Score"
 
+
+let scoreValue = 0;
+const category = "Movies"
 
 const words = [
   ['shrek', 'Ogre smash'], 
@@ -45,11 +49,22 @@ const Game = () => {
 
   const [correctLetters, setCorrectLetters] = useState([]);
   const [wrongLetters, setWrongLetters] = useState([]);
+  
+  useEffect(()=> {
+    scoreValue += 10
+    console.log(scoreValue)
+  },[correctLetters])
+
+  useEffect(()=> {
+    console.log(scoreValue)
+  },[wrongLetters])
+
 
   return (
     <>
       <Header />
       <h1 className="category">MOVIES!</h1>
+      <Score category = {category} scoreValue = {scoreValue}/>
       <div className="game-container">
         <Figure wrongLetters={wrongLetters}/>
         <WrongLetters wrongLetters={wrongLetters} />

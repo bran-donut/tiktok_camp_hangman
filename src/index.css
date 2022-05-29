@@ -233,3 +233,8 @@ line {
   font-family: 'Fairy Tale', sans-serif;
   font-weight: lighter;
 }
+
+.score-container {
+  text-align: center;
+  font-size:30px;
+}
