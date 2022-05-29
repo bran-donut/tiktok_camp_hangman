@@ -60,7 +60,6 @@ const Game = () => {
       <br></br>
       <br></br>
       <br></br>
-      <br></br>
       <Hint hintWord={hintWord} />
       <br></br>
       <Keyboard submitLetter={submitLetter} correctLetters={correctLetters} wrongLetters={wrongLetters} />
