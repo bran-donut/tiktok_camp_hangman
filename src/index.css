@@ -37,7 +37,7 @@ h1 {
   padding: 20px 30px;
   position: relative;
   margin: auto;
-  height: 170px;
+  height: 370px;
   width: 300px;
 }
 
@@ -55,7 +55,7 @@ h1 {
 .wrong-letters-container {
   position: absolute;
   top: 20px;
-  right: 20px;
+  right: -100px;
   display: flex;
   flex-direction: column;
   text-align: right;
