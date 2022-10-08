@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from './components/Header'
+import Story from './components/Story'
 import { Link } from 'react-router-dom'
 
 
@@ -7,6 +8,7 @@ export const Menu = () => {
   return (
     <>
         <Header />
+        <Story />
         <div className='menu-container'>
             <p> Pick your category!</p>
             <Link to={{
@@ -23,6 +25,11 @@ export const Menu = () => {
                 pathname: "/anime",
             }}>
                 <button className='menu-button'>Anime</button>
+            </Link>
+            <Link to={{
+                pathname: "/",
+            }}>
+                <buttin className='menu-button'>Back</buttin>
             </Link>
         </div>
     </>

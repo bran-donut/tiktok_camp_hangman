@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #34495e;
+  background-color: #420505;
   color: #fff;
   font-family: 'Fairy Tale', sans-serif;
   font-weight: lighter;
@@ -42,7 +42,7 @@ h1 {
 }
 
 .figure-container {
-  fill: transparent;
+  fill: wheat;
   stroke: #fff;
   stroke-width: 4px;
   stroke-linecap: round;
@@ -221,6 +221,10 @@ line {
   transform:rotate(-2deg);
 }
 
+.start {
+  vertical-align: middle;
+}
+=======
 
 .category {
   color:silver;
